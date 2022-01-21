@@ -1,6 +1,6 @@
 screenshots/
 target/
-src/test/resuorces/drivers/*
+drivers/*
 .IDEA/
 
 *.project
