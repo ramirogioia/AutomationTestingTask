@@ -77,12 +77,12 @@ public class AccountDetailsPage extends BasePage{
         driver.findElement(zipField).sendKeys(String.valueOf(zip));
     }
 
-    public void validateItemsAndCartValue(int itemQuantity, double cartValue){
-        double actualCartValue = Double.valueOf(driver.findElement(cartSubtotal).findElement(cartSubtotalValue).getText().replaceAll("₹", ""));
+    public void validateItemsAndCartValue(int itemQuantity, Double cartValue){
+        Double actualCartValue = Double.valueOf(driver.findElement(cartSubtotal).findElement(cartSubtotalValue).getText().replaceAll("₹", ""));
         int actualItemQuantity = driver.findElements(cartItems).size();
 
         assert itemQuantity == actualItemQuantity;
-        //assert cartValue == actualCartValue;
+        //assert cartValue.equals(actualCartValue);
     }
 
     public void clickOnPlaceOrder(){

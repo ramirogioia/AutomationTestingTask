@@ -32,12 +32,12 @@ public class CartPage extends BasePage{
         assert buttons.get(0).getText().equals("UPDATE BASKET");
     }
 
-    public void validateItemsAndCartValue(int itemQuantity, double cartValue){
-        double actualCartValue = Double.valueOf(driver.findElement(cartSubtotal).findElement(cartSubtotalValue).getText().replaceAll("₹", ""));
+    public void validateItemsAndCartValue(int itemQuantity, Double cartValue){
+        Double actualCartValue = Double.valueOf(driver.findElement(cartSubtotal).findElement(cartSubtotalValue).getText().replaceAll("₹", ""));
         int actualItemQuantity = driver.findElements(cartItems).size();
 
         assert itemQuantity == actualItemQuantity;
-        //assert cartValue == actualCartValue;
+        //assert cartValue.equals(actualCartValue);
     }
 
     public void clickOnProceedToCheckout(){

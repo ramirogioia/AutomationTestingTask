@@ -46,7 +46,7 @@ public class TestClass {
 
         List<String> itemsToAdd = Arrays.asList("Mastering JavaScript", "Selenium Ruby", "Thinking in HTML");
         homePage.validateCartIsEmpty();
-        double cartValue = homePage.addItemToBasketAndValidateCart(itemsToAdd);
+        Double cartValue = homePage.addItemToBasketAndValidateCart(itemsToAdd);
         homePage.clickOnCartButton();
 
         cartPage.validateItemsAndCartValue(itemsToAdd.size(), cartValue);

@@ -33,12 +33,12 @@ public class OrderPage extends BasePage{
         assert number.length() == 4;
     }
 
-    public void validateItemsAndCartValue(int itemQuantity, double cartValue){
-        double actualCartValue = Double.valueOf(driver.findElement(cartSubtotal).findElement(cartSubtotalValue).getText().replaceAll("₹", "").
+    public void validateItemsAndCartValue(int itemQuantity, Double cartValue){
+        Double actualCartValue = Double.valueOf(driver.findElement(cartSubtotal).findElement(cartSubtotalValue).getText().replaceAll("₹", "").
                 replaceAll(",", ""));
         int actualItemQuantity = driver.findElements(cartItems).size();
 
         assert itemQuantity == actualItemQuantity;
-        //assert cartValue == actualCartValue;
+        //assert cartValue.equals(actualCartValue);
     }
 }
