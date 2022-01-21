@@ -1,0 +1,9 @@
+screenshots/
+target/
+src/test/resuorces/drivers/*
+.IDEA/
+
+*.project
+*.classpath
+*.properties
+/bin/
