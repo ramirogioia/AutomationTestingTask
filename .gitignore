@@ -1,6 +1,6 @@
 screenshots/
 target/
-drivers/*
+!drivers/.gitkeep 
 .IDEA/
 
 *.project
