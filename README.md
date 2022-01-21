@@ -28,9 +28,9 @@ _Things necessary to run this project_
 
 ### Instalation / Set-up 🔧
 
-_Clonning the project:_
+_Clonning the project (you should ask for permissions):_
 
-    git clone https://bitbucket.org/CrDev/workstride-e2e/
+    git clone https://github.com/ramirogioia/AutomationTestingTask
     
 _Go to the root of the previously downloaded project_
 
@@ -38,12 +38,16 @@ _DOWNLOAD & INSTALL all the necessary dependencies and libraries using Maven:_
 
     mvn package
     mvn build
-    mvn clean test
 
+_DOWNLOAD and put your drivers into the following folder:_
+
+    /src/test/resources/drivers/
     
 ### Running Test Suite 🔧
 
+_Use the following command to run the test suite declared in the script:_
 
+    mvn clean test
 
 
 ### Reporting 🔧
@@ -62,7 +66,7 @@ This file will have all the results from the test suite ran and the root cause o
 
 _Tools used in the project_
 
-- [Java 11](https://www.java.com/) - Java
+- [Java 8](https://www.java.com/) - Java
 - [Selenium WebDriver](https://www.selenium.dev/documentation/webdriver/) - Selenium WebDriver
 - [Junit](https://junit.org/junit5/) - Junit
 - [Allure Report](http://allure.qatools.ru/) - Allure Report
