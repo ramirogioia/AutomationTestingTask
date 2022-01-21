@@ -6,4 +6,5 @@ src/test/resuorces/drivers/*
 *.project
 *.classpath
 *.properties
+*.iml
 /bin/
