@@ -7,13 +7,13 @@ import org.openqa.selenium.WebElement;
 
 public class BasePage {
 
-    protected static final String logoImageSource = "http://automationpractice.com/img/logo.jpg";
+    protected static final String logoImageSource = "http://practice.automationtesting.in/wp-content/uploads/2017/01/color-logo-original.png";
 
     protected WebDriver driver;
     protected Waiter waiter;
 
-    protected By homeLogo = By.id("header_logo");
-    protected By loginButton = By.className("login");
+    protected By homeLogo = By.className("header-bar");
+    protected By loginButton = By.id("menu-item-50");
 
 
     protected BasePage(WebDriver driver, Waiter waiter){

@@ -18,28 +18,23 @@ public class Waiter {
 		this.driver = driver;
 	}
 	
-	
 	public void waitToBeClickable(By element) {
 		anElement = (new WebDriverWait(driver,5)).until(ExpectedConditions.elementToBeClickable(element));
-	} 
-	
+	}
 	
 	public void waitToBeClickable(WebElement element) {
 		anElement = (new WebDriverWait(driver,5)).until(ExpectedConditions.elementToBeClickable(element));
 	} 
-	
-	
+
 	public void waitForElement(By element) {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(element);
 	}
 	
-	
 	public void waitForElement(WebElement element) {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		element.isDisplayed();
 	}
-	
 	
 	public boolean isClickable(WebElement element, WebDriver driver){
         try{
