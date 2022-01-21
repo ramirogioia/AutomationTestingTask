@@ -5,7 +5,7 @@
  Some initial features
 
 - Testing UI: End-to-end cases and element validation on the frontend for the following site:
-  http://automationpractice.com/index.php
+  http://practice.automationtesting.in/
 
 **Development**
 
